@@ -1,0 +1,9 @@
+# Items
+item.ingot_mithril.name=Mithril Ingot
+item.dust_dwimmerdust.name=Dwimmerdust
+item.barley.name=Barley
+item.barley_seed.name=Barley Seed
+
+# Blocks
+tile.ore_mithril.name=Mithril Ore
+

@@ -4,7 +4,7 @@ import net.gloomshroud.runevegr.Runevegr;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
-public class ItemBase extends Item {
+public class ItemBase extends Item implements ItemModelProvider{
 	
 	protected String name;
 	
@@ -14,8 +14,9 @@ public class ItemBase extends Item {
 		setRegistryName(name);
 	}
 	
-	public void registerItemModel(){
-		Runevegr.proxy.registerItemRenderer(this, 0, name);
+	@Override
+	public void registerItemModel(Item item){
+		Runevegr.proxy.registerItemRenderer(item, 0, name);
 	}
 	
 	@Override

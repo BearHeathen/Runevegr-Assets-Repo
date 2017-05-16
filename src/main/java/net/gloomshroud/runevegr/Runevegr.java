@@ -1,5 +1,6 @@
 package net.gloomshroud.runevegr;
 
+import net.gloomshroud.runevegr.block.ModBlocks;
 import net.gloomshroud.runevegr.item.ModItems;
 import net.gloomshroud.runevegr.proxy.CommonProxy;
 import net.minecraftforge.fml.common.Mod;
@@ -20,6 +21,7 @@ public class Runevegr {
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event){
 		System.out.println(References.NAME + " is loading!");
+		ModBlocks.init();
 		ModItems.init();
 	}
 	
