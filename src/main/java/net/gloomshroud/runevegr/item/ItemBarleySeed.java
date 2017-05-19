@@ -12,6 +12,7 @@ public class ItemBarleySeed extends ItemSeeds implements ItemModelProvider{
 		super(ModBlocks.cropBarley, Blocks.FARMLAND);
 		setUnlocalizedName("barley_seed");
 		setRegistryName("barley_seed");
+		setCreativeTab(Runevegr.creativeTab);
 	}
 
 	@Override

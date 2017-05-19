@@ -12,7 +12,7 @@ public class ModBlocks {
 	public static BlockCropBarley cropBarley;
 	
 	public static void init() {
-		oreMithril = register(new BlockOre("ore_mithril").setCreativeTab(CreativeTabs.MATERIALS));
+		oreMithril = register(new BlockOre("ore_mithril"));
 		cropBarley = register(new BlockCropBarley(), null);
 	}
 	

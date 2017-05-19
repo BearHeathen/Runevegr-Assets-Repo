@@ -14,10 +14,10 @@ public class ModItems {
 	public static ItemBase barley;
 	
 	public static void init(){
-		ingotMithril = register(new ItemBase("ingot_mithril").setCreativeTab(CreativeTabs.MATERIALS));
-		dustDwimmerdust = register(new ItemBase("dust_dwimmerdust").setCreativeTab(CreativeTabs.MATERIALS));
+		ingotMithril = register(new ItemBase("ingot_mithril"));
+		dustDwimmerdust = register(new ItemBase("dust_dwimmerdust"));
 		barleySeed = register(new ItemBarleySeed());
-		barley = register(new ItemBase("barley").setCreativeTab(CreativeTabs.FOOD));
+		barley = register(new ItemBase("barley"));
 	}
 	
 	public static <T extends Item> T register(T item){
