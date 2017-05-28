@@ -1,8 +1,8 @@
 package net.gloomshroud.runevegr.block;
 
 import net.gloomshroud.runevegr.item.ItemModelProvider;
+import net.gloomshroud.runevegr.item.ItemOreDict;
 import net.minecraft.block.Block;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemBlock;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
@@ -12,7 +12,7 @@ public class ModBlocks {
 	public static BlockCropBarley cropBarley;
 	
 	public static void init() {
-		oreMithril = register(new BlockOre("ore_mithril"));
+		oreMithril = register(new BlockOre("ore_mithril", "oreMithril"));
 		cropBarley = register(new BlockCropBarley(), null);
 	}
 	
@@ -22,9 +22,14 @@ public class ModBlocks {
 			GameRegistry.register(itemBlock);
 		}
 		
-		
 		if (block instanceof ItemModelProvider) {
 			((ItemModelProvider)block).registerItemModel(itemBlock);
+		}
+		if (block instanceof ItemOreDict){
+			((ItemOreDict)block).initOreDict();
+		}
+		if (itemBlock instanceof ItemOreDict){
+			((ItemOreDict)itemBlock).initOreDict();
 		}
 		return block;
 		
