@@ -6,6 +6,7 @@ item.barley_seed.name=Barley Seed
 
 # Blocks
 tile.ore_mithril.name=Mithril Ore
+tile.pedestal.name=Pedestal
 
 # Creative Tab
 itemGroup.runevegr=Runevegr

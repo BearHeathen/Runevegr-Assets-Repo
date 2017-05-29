@@ -1,0 +1,13 @@
+{
+	"forge_marker": 1
+	"variants": {
+		"normal": {
+			"model": "runevegr:pedestal"
+		},
+		"inventory": {
+			"model": "runevegr:pedestal",
+			"transform": "forge:default-block"
+		}
+	}
+
+}

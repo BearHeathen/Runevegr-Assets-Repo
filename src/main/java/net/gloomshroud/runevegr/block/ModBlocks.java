@@ -10,10 +10,12 @@ public class ModBlocks {
 	
 	public static BlockOre oreMithril;
 	public static BlockCropBarley cropBarley;
+	public static BlockPedestal pedestal;
 	
 	public static void init() {
 		oreMithril = register(new BlockOre("ore_mithril", "oreMithril"));
 		cropBarley = register(new BlockCropBarley(), null);
+		pedestal = register(new BlockPedestal());
 	}
 	
 	private static <T extends Block> T register(T block, ItemBlock itemBlock) {
