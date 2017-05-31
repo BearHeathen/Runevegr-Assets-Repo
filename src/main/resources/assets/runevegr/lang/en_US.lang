@@ -3,6 +3,11 @@ item.ingot_mithril.name=Mithril Ingot
 item.dust_dwimmerdust.name=Dwimmerdust
 item.barley.name=Barley
 item.barley_seed.name=Barley Seed
+item.mithril_sword.name=Mithril Sword
+item.mithril_pickaxe.name=Mithril Pickaxe
+item.mithril_axe.name=Mithril Axe
+item.mithril_shovel.name=Mithril Shovel
+item.mithril_hoe.name=Mithril Hoe
 
 # Blocks
 tile.ore_mithril.name=Mithril Ore
