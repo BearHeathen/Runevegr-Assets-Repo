@@ -1,10 +1,8 @@
 package net.gloomshroud.runevegr;
 
-import net.gloomshroud.runevegr.block.ModBlocks;
 import net.gloomshroud.runevegr.client.RunevegrTab;
-import net.gloomshroud.runevegr.item.ModItems;
 import net.gloomshroud.runevegr.proxy.CommonProxy;
-import net.gloomshroud.runevegr.recipe.ModRecipes;
+import net.gloomshroud.runevegr.world.ModWorldGen;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.fml.common.Mod;
@@ -12,6 +10,7 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 @Mod(modid = References.MOD_ID, name = References.NAME, version = References.VERSION)
 public class Runevegr {
@@ -30,6 +29,7 @@ public class Runevegr {
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event){
 		proxy.preInit(event);
+		GameRegistry.registerWorldGenerator(new ModWorldGen(), 3);
 	}
 	
 	@Mod.EventHandler
