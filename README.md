@@ -1,2 +1,2 @@
 # Runevegr
-A mod for Minecraft 1.11.2
+A mod for Minecraft 1.12.2
