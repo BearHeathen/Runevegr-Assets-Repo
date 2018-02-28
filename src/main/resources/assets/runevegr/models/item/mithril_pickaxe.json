@@ -1,6 +1,0 @@
-{
-    "parent": "item/handheld",
-    "textures": {
-        "layer0": "runevegr:items/mithril_pickaxe"
-    }
-}
